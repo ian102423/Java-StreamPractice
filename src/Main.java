@@ -54,9 +54,7 @@ public class Main {
         }
         System.out.println("Number of entries on Tuesday, Wednesday or Thursday: " + count);
         System.out.println("Stream, filter, count: ");
-        long count1 = 0;
-        // write stream
-        count1 = entries.stream()
+        long count1 = entries.stream()
                 .filter(entry -> entry.getDay().equals(Day.TUESDAY) ||
                         entry.getDay().equals(Day.WEDNESDAY) ||
                         entry.getDay().equals(Day.THURSDAY))
